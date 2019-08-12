@@ -1,0 +1,75 @@
+$breakpoint-tablet : 1500px;
+$breakpoint-mobile: 835px;
+
+@media (max-width: $breakpoint-tablet) {
+
+    body {
+
+        .second-container {
+
+            margin: 0 auto;
+
+            .cards-container {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                & > div {
+
+                    margin: 1rem;
+                    width: 20rem;
+                }
+            }
+        }
+
+        .container {
+
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem 4rem 4rem 4rem;
+
+            .search {
+                text-align: center;
+            }
+        }
+    }
+    
+
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+    body {
+        overflow: unset;
+        height: unset;
+        background: url(/dist/img/background_mobile.png) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+        .second-container {
+            flex-direction: column-reverse;
+        }
+
+        .cards-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .second-container {
+            .next-btn {
+                justify-content: center;
+
+                img {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .cards-container > div{
+                margin-bottom: 2rem;
+               
+            }
+        }
+    }
+}
