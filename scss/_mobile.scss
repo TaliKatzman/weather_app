@@ -1,9 +1,12 @@
 $breakpoint-tablet : 1500px;
-$breakpoint-mobile: 835px;
+$breakpoint-mobile: 850px;
 
 @media (max-width: $breakpoint-tablet) {
 
     body {
+
+        overflow: unset;
+        height: unset;
 
         .second-container {
 
@@ -42,8 +45,7 @@ $breakpoint-mobile: 835px;
 @media (max-width: $breakpoint-mobile) {
 
     body {
-        overflow: unset;
-        height: unset;
+
         background: url(../img/background_mobile.png) no-repeat;
         background-attachment: fixed;
         background-size: cover;
