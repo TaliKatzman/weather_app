@@ -21,7 +21,8 @@ body {
     justify-content: space-between;
     padding: 2rem 4rem 4rem 4rem; }
     body .container .search {
-      text-align: right; }
+      text-align: right;
+      margin-bottom: 1rem; }
   body .second-container {
     display: flex;
     flex-direction: column; }
